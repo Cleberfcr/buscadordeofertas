@@ -1,0 +1,1 @@
+fetch("data/produtos.json").then(r=>r.json()).then(d=>{const c=document.getElementById("produtos-container");d.forEach(p=>{let e=document.createElement("div");e.className="card";e.textContent=p.nome;c.appendChild(e);});});
